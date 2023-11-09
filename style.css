@@ -10,7 +10,6 @@
 img,
 svg {
   vertical-align: auto;
-  /*   display: block; */
   max-width: 100%;
   height: auto;
 }
@@ -26,6 +25,7 @@ html {
 
 /* || variables */
 :root {
+  --pry-color-1: #f8fafc;
   --pry-color: #111827;
   --secondary-color: #757982;
   --bg-color: #e3e8ed;
@@ -41,8 +41,7 @@ html {
 /* || Landing page */
 header {
   width: 100%;
-  margin: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .landing-main {
@@ -102,10 +101,15 @@ header {
   padding: 8px 30px;
   border-radius: 6px;
   background: var(--pry-color);
+  text-decoration: none;
+}
+
+.input-btn-icon {
+  fill: var(--pry-color-1);
 }
 
 .footer {
-  margin: 72px 0 38px 0;
+  margin: 72px 0 28px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,15 +118,14 @@ header {
 
 /* ||Portfolio Page */
 .portfolio {
-  margin: 0 15px;
   width: 100%;
-  /* height: 100vh; */
   font-family: var(--font-family-i);
   color: var(--pry-color);
 }
 
 .portfolio-navbar {
   width: 100%;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
 }
