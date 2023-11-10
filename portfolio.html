@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/Frame 204.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/Frame204.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Waseem Ahmad</title>
 </head>
@@ -41,11 +41,13 @@
     </header>
 
     <main class="portfolio-container1">
-        <div class="portfolio-container2">
-            <div><img class="profile-pic" src="/img/image 1.png" alt="profile-pic" width="898" height="595"
+        <section class="portfolio-container2">
+            <div><img class="profile-pic" src="/img/image1.png" alt="profile-pic" width="898" height="595"
                     loading="eager">
                 <p class="landing-p1">Hello, I am</p>
-                <h2 class="landing-name">Waseem Ahmad</h2>
+
+                <h2 class="landing-name"><span class="nowap">Waseem Ahmad</span></h2>
+
                 <p class="landing-p2">Senior React developer | React.js, Node .js, Material-ui, Sass, Firebase, Redux,
                     Redux
                     Toolkit, Rematchjs, HTML, CSS, Javascript, Typescript</p>
@@ -56,7 +58,7 @@
                     and <strong>WebDevelopment.</strong></p>
             </div>
             <nav class="side-nav">
-                <ul>
+                <ul class="side-nav-links">
                     <li>
                         <a href="#aboutme">
                             <svg width="25" height="2" viewBox="0 0 25 2" fill="none"
@@ -83,7 +85,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="projects">
+                        <a href="#projects">
                             <svg width="25" height="2" viewBox="0 0 25 2" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path id="Vector 1" d="M1 1H24" stroke="#757982" stroke-linecap="round" />
@@ -92,9 +94,9 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-        <div class="portfolio-container3">
-            <div class="aboutme" id="aboutme">
+        </section>
+        <article class="portfolio-container3">
+            <section class="aboutme" id="aboutme">
                 <h3>About me</h3>
                 <p>Keeping it real, making use of modern tools and methodologies to accelerate business growth and
                     establishing unfair
@@ -130,7 +132,8 @@
                     </svg>
                     <div>
                         <h4>Full Stack Development</h4>
-                        <p>Over the years, I've specialized in all areas of the stack, Front-End to Back-End, DevOps and
+                        <p>Over the years, I've specialized in all areas of the stack, Front-End to Back-End, DevOps
+                            and
                             Infrastructure, at scale.</p>
                     </div>
                 </div>
@@ -158,15 +161,16 @@
                     </svg>
                     <div>
                         <h4>FinOps / Serverless / Cloud Native</h4>
-                        <p>As an early adopter and advocate of Cloud, I use leading-edge tools, services and techniques
+                        <p>As an early adopter and advocate of Cloud, I use leading-edge tools, services and
+                            techniques
                             to
                             give
                             businesses major
                             advantage in time to market and TCOE.</p>
                     </div>
                 </div>
-            </div>
-            <div class="about-specialiation">
+            </section>
+            <section class="about-specialiation">
                 <h3>Areas of Specialization</h3>
                 <p>A set of unorthodox yet complimentary skills to create advantage.</p>
 
@@ -199,7 +203,8 @@
                     <div>
                         <h4>Serverless First</h4>
                         <p>
-                            Serverless technology is set to become the compute platform for the next decade, businesses
+                            Serverless technology is set to become the compute platform for the next decade,
+                            businesses
                             who
                             leverage it early can
                             get a major competitive advantage.
@@ -241,72 +246,105 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="tools" id="tools">
+            <section class="tools" id="tools">
                 <h3>Tools & Platform</h3>
                 <div class="tools-summary">
                     <h4>Languages</h4>
                     <p>Javascript, C#, Java, Golang</p>
                 </div>
+
                 <div class="tools-summary">
                     <h4>Frameworks</h4>
                     <p>Serverless Framework, AWS Amplify, Furnace Framework, React, Gatsby, Next.js, React Native,
                         Xamarin, Tailwind CSS,
                         Grommet</p>
                 </div>
+
                 <div class="tools-summary">
                     <h4>DevOps</h4>
                     <p>GitHub, Docker, Kubernetes, Ansible, Terraform, Pulumi, GitLab, Jenkins, Circle CI</p>
                 </div>
+
                 <div class="tools-summary">
                     <h4>Tools</h4>
                     <p>Sanity CMS, Algolia, GraphQL, Airtable, Zapier</p>
                 </div>
+
                 <div class="tools-summary">
                     <h4>Platforms</h4>
                     <p>Amazon Web Services (Lambda, DynamoDB, SQS, Kinesis, S3, API Gateway, ECS/Fargate)
                         Microsoft Azure, Google Cloud Platform</p>
                 </div>
+
                 <div class="tools-summary">
                     <h4>Big Data</h4>
                     <p>Javascript, C#, Java, GolangApache Kafka, Apache Storm, Elasticsearch, Hadoop</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="experience" id="experience">
+            <section class="experience" id="experience">
                 <h3>Experience</h3>
                 <div class="experience-summary">
                     <h4>Senior React.js Developer</h4>
-                    <p><span class="exp-p1">Lasting Sales</span><span class="exp-p2">Feb 2022 - Present</span><span
-                            class="exp-p3">Cascading Style Sheets (CSS)</span><span class="exp-p3">HTML5</span><span
-                            class="exp-p3">Git</span></p>
+                    <div class="exp-p1">
+                        <p class="exp-p-i">Lasting Sales</p>
+                        <p class="exp-p-ii">Feb 2022 - Present</p>
+                    </div>
+                    <div class="exp-p2">
+                        <p class="exp-p-iii">Cascading Style Sheets (CSS)</p>
+                        <p class="exp-p-iii">HTML5</p>
+                        <p class="exp-p-iii">Git</p>
+                    </div>
                 </div>
+
                 <div class="experience-summary">
                     <h4>React Developer</h4>
-                    <p><span class="exp-p1">VIVID Technologies Ltd</span><span class="exp-p2">Feb 2022 -
-                            Present</span><span class="exp-p3">Blockchain</span><span class="exp-p3">Cascading Style
-                            Sheets (CSS)</span><span class="exp-p3">SASS</span><span class="exp-p3">HTML5</span><span
-                            class="exp-p3">Git</span><span class="exp-p3">Redux.js</span></p>
+                    <div class="exp-p1">
+                        <p class="exp-p-i">VIVID Technologies Ltd</p>
+                        <p class="exp-p-ii">Feb 2022 - Present</p>
+                    </div>
+                    <div class="exp-p2">
+                        <p class="exp-p-iii">Blockchain</p>
+                        <p class="exp-p-iii">Cascading Style
+                            Sheets (CSS)</p>
+                        <p class="exp-p-iii">SASS</p>
+                        <p class="exp-p-iii">HTML5</p>
+                        <p class="exp-p-iii">Git</p>
+                        <p class="exp-p-iii">Redux.js
+                        </p>
+                    </div>
+                    </p>
                 </div>
+
                 <div class="experience-summary">
                     <h4>React Developer</h4>
-                    <p><span class="exp-p1">Teclipse Sol Pvt Ltd</span><span class="exp-p2">Aug 2021 - Mar
-                            2022</span><span class="exp-p3">Cascading Style Sheets (CSS)</span><span
-                            class="exp-p3">HTML5</span><span class="exp-p3">Git</span></p>
+                    <div class="exp-p1">
+                        <p class="exp-p-i">Teclipse Sol Pvt Ltd</p>
+                        <p class="exp-pii">Aug 2021 - Mar
+                            2022</p>
+                    </div>
+                    <div class="exp-p2">
+                        <p class="exp-p-iii">Cascading Style Sheets (CSS)</p>
+                        <p class="exp-p-iii">HTML5</p>
+                        <p class="exp-p-iii">Git</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects" id="projects">
+            </section>
+
+            <section class="projects" id="projects">
                 <h3>Projects</h3>
                 <div class="project-summary">
                     <div class="pro-sum-i">
-                        <img src="/img/Tournaments1 1.jpg" alt="Tournament" width="160.589" height="90">
-                        <p>gamefied.io
+                        <img src="/img/Tournaments1.jpg" alt="Tournament" width="160" height="90">
+                        <p class="pp">gamefied.io
                             <svg class="pro-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9"
                                 viewBox="0 0 9 9" fill="none">
                                 <path
                                     d="M2.5084 0.50369L7.51589 0.50369L7.51589 5.51118M0.503747 7.51583L7.44577 0.573811"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke="Black" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </p>
                     </div>
@@ -318,7 +356,8 @@
                             </p>
                         </div>
                         <div>
-                            <p class="pro-p2">The web3 gaming guild management platform is designed to address the needs
+                            <p class="pro-p2">The web3 gaming guild management platform is designed to address the
+                                needs
                                 of gaming communities by providing a comp...</p>
                         </div>
                     </div>
@@ -326,13 +365,14 @@
 
                 <div class="project-summary">
                     <div class="pro-sum-i">
-                        <img src="/img/1 441.jpg" alt="AI" width="143.892" height="90">
+                        <img src="/img/1441.jpg" alt="AI" width="143" height="90">
                         <p>ui.chatai.co...
                             <svg class="pro-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9"
                                 viewBox="0 0 9 9" fill="none">
                                 <path
                                     d="M2.5084 0.50369L7.51589 0.50369L7.51589 5.51118M0.503747 7.51583L7.44577 0.573811"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke="Black" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </p>
                     </div>
@@ -347,15 +387,21 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="project-summary">
                     <div class="pro-sum-i">
-                        <img src="/img/Main1.jpg" alt="main" width="139.581" height="90">
-                        <p>gamefied.io... <svg class="pro-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9"
-                                viewBox="0 0 9 9" fill="none">
-                                <path
-                                    d="M2.5084 0.50369L7.51589 0.50369L7.51589 5.51118M0.503747 7.51583L7.44577 0.573811"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></p>
+                        <img src="/img/Main1.jpg" alt="main" width="149" height="90">
+                        <span class="nowrap">
+                            <p>gamefied.io...
+                                <svg class="pro-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                    viewBox="0 0 9 9" fill="none">
+                                    <path
+                                        d="M2.5084 0.50369L7.51589 0.50369L7.51589 5.51118M0.503747 7.51583L7.44577 0.573811"
+                                        stroke="Black" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </p>
+                        </span>
                     </div>
                     <div class="pro-sum-ii">
                         <div>
@@ -369,16 +415,20 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="project-summary">
                     <div class="pro-sum-i">
-                        <img src="/img/935shots_so 1.jpg" alt="99starz" width="119.641" height="90">
-                        <p>99starz.io/
-                            <svg class="pro-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9"
-                                viewBox="0 0 9 9" fill="none">
-                                <path
-                                    d="M2.5084 0.50369L7.51589 0.50369L7.51589 5.51118M0.503747 7.51583L7.44577 0.573811"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <img src="/img/935shots_so1.jpg" alt="99starz" width="149" height="90">
+                        <span class="nowrap">
+                            <p>99starz.io/
+                                <svg class="pro-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                    viewBox="0 0 9 9" fill="none">
+                                    <path
+                                        d="M2.5084 0.50369L7.51589 0.50369L7.51589 5.51118M0.503747 7.51583L7.44577 0.573811"
+                                        stroke="Black" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                        </span>
                         </p>
                     </div>
                     <div class="pro-sum-ii">
@@ -387,18 +437,15 @@
                             <p class="pro-p1">Landing page Design</p>
                         </div>
                         <div>
-                            <p class="pro-p2">People at 99Starz believe that by empowering gamers, guilds, studios, and
+                            <p class="pro-p2">People at 99Starz believe that by empowering gamers, guilds, studios,
+                                and
                                 investors with cutting-edge Web3 products and
                                 service...</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--  <div class="nav-btn">
-                <a href="index.html"><button type="button">Home</button></a>
-                <a href="#tools"><button type="button">Tools & Platforms</button></a>
-            </div> -->
-        </div>
+            </section>
+        </article>
     </main>
 
     <footer class="footer">
