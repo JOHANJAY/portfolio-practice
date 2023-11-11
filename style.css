@@ -17,6 +17,7 @@ svg {
 /* || utlity */
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 10rem;
 }
 
 .nowrap {
@@ -82,6 +83,10 @@ header {
   margin: 5px 0 0 0;
 }
 
+.landing-p1 {
+  color: var(--secondary-color);
+}
+
 .landing-name {
   font-size: 36px;
   font-weight: 800;
@@ -127,18 +132,31 @@ header {
 
 /* ||Portfolio Page */
 .portfolio {
-  width: 100%;
   font-family: var(--font-family-i);
   color: var(--pry-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.portfolio-navbar {
+.portfolio-header {
   width: 100%;
-  padding: 0 10px;
+  /*  padding: 10px 10px;
   display: flex;
   flex-direction: column;
   position: sticky;
   top: 0;
+  background-color: var(--bg-color); */
+}
+
+.portfolio-navbar {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
 }
 
 .portfolio-navbar-links {
@@ -161,42 +179,68 @@ header {
 .portfolio-container1 {
   padding: 20px;
   display: flex;
-  gap: 90px;
+  gap: 60px;
+  scroll-margin-top: 100px;
 }
 
 .portfolio-container2 {
-  /* display: none; */
+  width: 100%;
+  display: none;
+}
+
+.portfolio-p1 {
+  color: var(--secondary-color);
+  padding: 0 6px;
+}
+
+.portfolio-name {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.portfolio-p2 {
+  color: var(--secondary-color);
+  font-size: 10px;
+  max-width: 40ch;
+  line-height: 155%;
+}
+
+.portfolio-p3 {
+  font-size: 14px;
+  line-height: 170%;
+  max-width: 39ch;
 }
 
 .side-nav-links {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
 }
 
 .side-nav a:any-link {
   text-decoration: none;
-  color: var(--pry-color);
+  color: var(--secondary-color);
   font-size: 14px;
 }
 
-.portfolio-container3 {
-  max-height: 100vh;
-  overflow: scroll;
-  scroll-behavior: smooth;
-  scroll-margin-top: 8rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 2;
-  padding: var(--padding-v2);
-  gap: 60px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.side-nav :is(a:hover, a:focus) {
+  color: var(--pry-color);
 }
 
-.portfolio-container3::-webkit-scrollbar {
-  display: none;
+.sd-nv-svg {
+  padding: 3px;
+}
+
+.portfolio-container3 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1.5;
+  padding: var(--padding-v2);
+  gap: 50px;
 }
 
 .portfolio-container3 h3 {
@@ -337,4 +381,64 @@ header {
 .pro-sum-ii .pro-p2 {
   color: var(--pry-color);
   max-width: 40ch;
+}
+
+.portfolio-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 18px 30px;
+    gap: 20px;
+
+/* || Media Quary */
+@media screen and (min-width: 769px) {
+  /*  .portfolio-header {
+    position: fixed;
+  } */
+
+  .portfolio-navbar {
+    display: none;
+  }
+
+  .portfolio-container1 {
+    padding: 0 30px;
+    max-height: 95vh;
+  }
+
+  .portfolio-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portfolio-dits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portfolio-container3 {
+    overflow: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .portfolio-container3::-webkit-scrollbar {
+    display: none;
+  }
+
+  .portfolio-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0 18px 30px;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 0 45px;
+  }
 }
