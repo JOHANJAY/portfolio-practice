@@ -60,6 +60,7 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--pry-color);
+  overflow: hidden;
 }
 
 .landing-container1 {
