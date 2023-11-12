@@ -383,13 +383,12 @@ header {
   max-width: 40ch;
 }
 
-<<<<<<< HEAD
 .portfolio-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0 18px 30px;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 18px 30px;
+  gap: 20px;
+}
 
 /* || Media Quary */
 @media screen and (min-width: 769px) {
@@ -430,10 +429,6 @@ header {
   }
 
   .portfolio-footer {
-<<<<<<< HEAD
-    display: flex;
-=======
->>>>>>> 2a99bd40eebc2ce8b0bce052bb95f37d578e3d9c
     justify-content: flex-start;
     align-items: center;
     margin: 40px 0 18px 30px;
